@@ -23,10 +23,11 @@
 @keyframes ball {
     /* 시작시점 : 0% or from */
     /* 종료시점 : 100% or to */
-    0% { left: 0; }
+    0% { left: 0; top: 0;}
     50% { 
+        top: 200px;
         left: calc(100% - 200px); 
-        transform: rotate( calc(360deg * 2) ); 
+        transform: rotate( calc(360deg * 1) ); 
     }
     100% { left: 0; }
     /* 공이 튕겼다가 다시 돌아오도록 변경해보세요! */

@@ -7,7 +7,7 @@
 }
 
 li {
-    display: inline;        /* width, height 적용 ❌ */
+    /* display: inline; */        /* width, height 적용 ❌ */
     display: inline-block;  /* width, height 적용 ⭕ */
     /* inline       : 크기 ❌, 여백 ⭕, 한 줄 나란히 배치 */
     /* block        : 크기 ⭕, 여백 ⭕, 세로로 쌓여서 배치 */
@@ -38,7 +38,10 @@ li:hover {
         - Grid 레이아웃의 열의 크기를 지정하는 속성
         (여기서는 3개의 열 크기를 auto 지정)
     */
-    grid-template-columns: auto auto auto;
+    /*  grid-template-columns: 50% repeat(2, auto); 1번째만 400px 나머지 2개는 auto */
+    /*  grid-template-columns: 400px repeat(2, auto); 1번째만 400px 나머지 2개는 auto */
+    /*  grid-template-columns: repeat(4, auto); 아래와 같음 */
+    grid-template-columns: auto auto auto auto;
     /* background-color: royalblue; */
     padding: 10px;
 }
@@ -53,7 +56,7 @@ li:hover {
 /* Flex 레이아웃 */
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;          /* 기본은 x행으로 나란히 출력 */
     justify-content: space-between;
     row-gap: 100px;
     column-gap: 50px;

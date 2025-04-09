@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테스트 </title>
+    <style>
+        .login-wrap {
+            position: absolute;
+            left: 50%;
+            top: 10%;
+            width: 400px;
+            height: 600px;
+            transform: translate(-50%, -10%);
+            border: 1px solid black;
+        }
+
+        img {
+            width: 400px;
+        }
+        
+        .login-inputbox input {
+
+    height: 30px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+        }
+        
+        .login-remember {
+            text-align: center;
+
+        }
+
+        
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="login" method="post">
+            <div class="login-wrap">
+                <div id="login">
+                    <div class="login-logo">
+                        <img src="../login_page/img/logo.jpg" alt="로고">
+                    </div>
+                    <div class="login-inputbox">
+                        <input type="text" name="id" placeholder="아이디">
+                    </div>
+                    <div class="login-inputbox">
+                        <input type="text" name="pw" placeholder="비밀번호">
+                    </div>
+                    <div class="login-remeber">
+                        <label for="remember-id">
+                            <input type="checkbox" name="remember-id" id="remember-id">
+                            <span>아이디 저장</span>
+                        </label>
+                        <label for="rembember-auto">
+                            <input type="checkbox" name="remember-auto" id="rembember-auto">
+                            <span>자동 로그인</span>
+                        </label>
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 페이지 만들기</title>
+</head>
+<style>
+    .container {
+    background-color: lightgreen;
+    position: relative;
+    width: 600px;
+    height: 800px;
+    margin: auto;
+    }
+    img {
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        top: 30%;       
+        left: 50%;     
+        transform: translate(-50%, -50%);
+    }
+    .id_input {
+        width: 400px;
+        position: absolute;
+        top: 55%;       
+        left: 50%;     
+        transform: translate(-50%, -50%);
+        border-bottom: 3px solid black;
+    }
+    .pw_input {
+        width: 400px;
+        position: absolute;
+        top: 65%;       
+        left: 50%;     
+        transform: translate(-50%, -50%);
+        border-bottom: 3px solid black;
+    }
+
+    .check_id {
+        position: absolute;
+        top: 72%;       
+        left: 25%;     
+        transform: translate(-50%, -50%);
+    }
+    .check_auto_login {
+        position: absolute;
+        top: 72%;       
+        left: 45%;     
+        transform: translate(-50%, -50%);
+    }
+
+    .login_btn {
+        width: 400px;
+        height: 50px;
+        font-size: 30px;
+        background-color: lightblue;
+
+        position: absolute;
+        top: 80%;       
+        left: 50%;     
+        transform: translate(-50%, -50%);
+        
+    }
+
+
+
+</style>
+<body>
+    <center><h1>로그인 페이지 만들기</h1></center>
+    <div class="container">
+        <div class="logo">
+            <img src="img/logo.jpg" alt="">
+        </div>
+        
+        <div class="id_input">
+            아이디 <input type="text" name="" id="">
+        </div>
+
+        <div class="pw_input">
+            비밀번호 <input type="text" name="" id="">
+        </div>
+        
+        <div class="check_id">
+            <input type="button"> 아이디 저장 
+        </div>
+
+        <div class="check_auto_login">
+            <input type="button"> 자동 로그인
+        </div>
+
+        <div class="login_btn">
+            로그인
+        </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
