@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my login page</title>
+    <style>
+        img {
+            width: 400px;
+        }
+
+        .login-wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 600px;
+
+            padding: 20px;
+            border: 1px solid black;
+        }
+        .login-inputbox1 input {
+            text-align: left;
+            height: 20px;
+            width: 100%;
+        }
+        .loing-inputbox2 input {
+            text-align: left;
+            height: 20px;
+            width: 100%;
+        }
+        .login-remember {
+            text-align: center;
+        }
+        .btnbox button {
+            height: 30px;
+            width: 100%;
+            margin: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/login" method="post">
+            <div class="login-wrap">
+                <div class="login-logo">
+                    <img src="../login_page/img/logo.jpg" alt="로고">
+                </div>
+                <div class="login-inputbox1">
+                    <input type="text" name="id" placeholder="아이">
+                </div>
+                <div class="loing-inputbox2">
+                    <input type="text" name="pw" placeholder="비번">
+                </div>
+                <div class="login-remember">
+                    <label for="remember-id">
+                        <input type="checkbox" name="remember-id" id="remember-id">
+                        <span>아이디 저장</span>
+                    </label>
+                    <label for="remember-auto-login">
+                        <input type="checkbox" name="remember-auto-login" id="remember-auto-login">
+                        <span>자동 로그인</span>
+                    </label>
+                </div>
+                <div class="btnbox">
+                    <button type="submit" class="btn">로그인</button>
+                </div>
+                <div class="btnbox">
+                    <button type="submit" class="btn">회원가입</button>
+                    <a href="http://naver.com"></a>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
