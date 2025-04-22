@@ -1,18 +1,25 @@
 // 문서 준비 이벤트
-document.addEventListener("DOMContentLoaded", (e) => {
-    const mainMenuList = document.querySelectorAll('.main-menu > .menu-item')
+$(function() { 
+    const mainMenu = $('.main-menu > .menu-item')
 
-    mainMenuList.forEach(function(menu) { 
-        // 해당 메인 메뉴의 서브메뉴
-        const submenu = menu.children[1]
+    // 방법 1
+    // mainMenu.on('mouseover', function() { 
+    //     $(this).find('.submenu').stop().slideDown()
+    // })
 
-        // 마우스 올렸을 때
-        menu.addEventListener("mouseover", () => {
-            submenu.classList.add("active")
-        })
-        // 마우스 벗어날 때
-        menu.addEventListener("mouseout", () => {
-            submenu.classList.remove("active")
-        })
-    })
+    // mainMenu.on('mouseout', function() { 
+    //     $(this).find('.submenu').stop().slideUp()
+    // })
+
+    // 방법 2
+    mainMenu.hover( 
+        function() { 
+            $(this).find('.submenu').stop().slideDown()
+        },
+        function() { 
+            $(this).find('.submenu').stop().slideUp()
+        }
+    )
+
+
 })

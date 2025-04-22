@@ -1,22 +1,22 @@
 // 문서 준비 이벤트
-document.addEventListener("DOMContentLoaded", () => {
-    const main = document.querySelector(".main")
-    const sub = document.querySelector('.sub')
-    
-    // 메인 메뉴 - 마우스 이벤트
-    main.addEventListener("mouseover", () => {
-        sub.classList.add('active')
-    })
+$(function() { 
+    const menu = $('.menu')
+    const sub = $('.sub .inner')
 
-    main.addEventListener('mouseout', () => {
-        sub.classList.remove('active')
-    })
+    // menu.on('mouseover', function() {
+    //     sub.stop().fadeIn()
+    // })
+    // menu.on('mouseout', function() {
+    //     sub.stop().fadeOut()
+    // })
+
+    menu.hover(
+        function() {
+            sub.stop().fadeIn()
+        },
+        function() {
+            sub.stop().fadeOut()
+        }
+    )
+  
 })
-    // 서브 메뉴 - 마우스 이벤트
-    sub.addEventListener("mouseover", () => {
-        sub.classList.add('active')
-    })
-
-    sub.addEventListener('mouseout', () => {
-        sub.classList.remove('active')
-    })

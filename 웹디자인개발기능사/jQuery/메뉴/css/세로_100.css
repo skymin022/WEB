@@ -42,7 +42,6 @@ header {
 }
 
 .sub .inner {
-  width: clac( 1200px - 165px);
   width: 100%;
   display: none;
   flex-wrap: wrap;
@@ -52,9 +51,7 @@ header {
   padding: 0 40px;
 }
 
-.sub.active .inner {
-  display: flex;
-}
+
 
 .sub .sub-menu {
   display: flex;

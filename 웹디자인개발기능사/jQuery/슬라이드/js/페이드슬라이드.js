@@ -13,6 +13,4 @@ $(function() {
         $slide.eq(index).fadeIn(speed)
     },time)
 
-
-
 })
